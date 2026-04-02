@@ -7,4 +7,6 @@ using QuantumCrypto
     include("test_secure_memory.jl")
     include("test_kem.jl")
     include("test_kem_dem.jl")
+    include("test_sig_wrapper.jl")
+    include("test_signatures.jl")
 end
