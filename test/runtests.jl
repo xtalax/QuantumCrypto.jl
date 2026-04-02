@@ -9,4 +9,6 @@ using QuantumCrypto
     include("test_kem_dem.jl")
     include("test_sig_wrapper.jl")
     include("test_signatures.jl")
+    include("test_hybrid.jl")
+    include("test_serialization.jl")
 end

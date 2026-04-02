@@ -12,6 +12,13 @@ include("kem.jl")
 include("kem_dem.jl")
 include("sig_keys.jl")
 include("signatures.jl")
+include("serialization.jl")
+include("x25519.jl")
+include("hybrid.jl")
+
+# Hybrid KEM parameter sets
+export HybridParams, HybridPublicKey, HybridPrivateKey
+export HYBRID_KEM_512, HYBRID_KEM_768, HYBRID_KEM_1024
 
 # KEM parameter sets
 export ML_KEM_512, ML_KEM_768, ML_KEM_1024
@@ -34,5 +41,8 @@ export verify
 
 # Secure memory
 export SecureBuffer, wipe!
+
+# Serialization
+export to_pem, from_pem, write_pem, read_pem
 
 end # module
